@@ -53,7 +53,7 @@ const workerConfig = {
       id: `https://boke.xccde.nyc.mn/wordpress',
       name: 'Blog',
       // `method` should be `TCP_PING` for tcp monitors
-      method: 'GET',
+      method: 'TCP_PING',
       // `target` should be `host:port` for tcp monitors
       target: 'https://boke.xccde.nyc.mn/wordpress',
       tooltip: 'My production server monitor',
