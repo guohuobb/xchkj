@@ -1,6 +1,6 @@
 const pageConfig = {
   // Title for your status page
-  title: "AM科技's Status Page",
+  title: "xch科技's Status Page",
   // Links shown at the header of your status page, could set `highlight` to `true`
   links: [
     { link: 'https://boke.xccde.nyc.mn/wordpress', label: 'xch科技', highlight: true },
@@ -12,7 +12,7 @@ const pageConfig = {
 
 const workerConfig = {
   // Write KV at most every 3 minutes unless the status changed
-  kvWriteCooldownMinutes: 2,
+  kvWriteCooldownMinutes: 3,
   // Enable HTTP Basic auth for status page & API by uncommenting the line below, format `<USERNAME>:<PASSWORD>`
   // passwordProtection: 'username:password',
   // Define all your monitors here
@@ -46,18 +46,18 @@ const workerConfig = {
       // responseKeyword: 'success',
       // [OPTIONAL] if specified, the check will run in your specified region,
       // refer to docs https://github.com/lyc8503/UptimeFlare/wiki/Geo-specific-checks-setup before setting this value
-      // checkLocationWorkerRoute: 'https://am.809098.xyz',
+      // checkLocationWorkerRoute: 'https://boke.xccde.nyc.mn/wordpress',
     },
     // Example TCP Monitor
     {
-      id: `boke.xccde.nyc.mn/wordpress',
+      id: `https://boke.xccde.nyc.mn/wordpress',
       name: 'Blog',
       // `method` should be `TCP_PING` for tcp monitors
       method: 'GET',
       // `target` should be `host:port` for tcp monitors
       target: 'https://boke.xccde.nyc.mn/wordpress',
       tooltip: 'My production server monitor',
-      statusPageLink: 'https://809098.xyz',
+      statusPageLink: 'https://boke.xccde.nyc.mn/wordpress',
       timeout: 10000,
     },
   ],
